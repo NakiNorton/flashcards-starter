@@ -18,10 +18,10 @@ class Round {
     this.turns++;  
     this.index++; 
     this.currentCard = this.deck.cards[this.index] 
-    if (!turn.evaluateGuess()) { 
+    if (!turn.evaluateGuess(guess)) { 
       this.incorrectGuesses.push(this.currentCard.id);
     }
-    turn.giveFeedback();
+    turn.giveFeedback(guess);
   }
 
   calculatePercentCorrect() { 

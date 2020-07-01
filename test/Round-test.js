@@ -40,13 +40,13 @@ describe('Round', function () {
   });
 
   it('should increment turn count with every guess', function () {
-    round.takeTurn();
+    round.takeTurn('array');
     expect(round.turns).to.equal(1);
   });
 
   it('should make the next card in the deck, the current card', function () {
     expect(round.currentCard).to.equal(round.deck.cards[0]);
-    round.takeTurn();
+    round.takeTurn('array');
     expect(round.currentCard).to.equal(round.deck.cards[1]);
   });
 
