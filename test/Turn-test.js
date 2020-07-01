@@ -33,12 +33,12 @@ describe ('Turn', function() {
   }); 
 
   it('should return the guess', function() {
-    const turn = new Turn('object', card);
-    expect(turn.returnGuess()).to.equal('object');
+    const turn = new Turn('array', card);
+    expect(turn.returnGuess()).to.equal('array');
   });
 
   it('should return the card', function() {
-    const turn = new Turn('object', card);
+    const turn = new Turn('array', card);
     expect(turn.returnCard()).to.equal(card);
   });
 
