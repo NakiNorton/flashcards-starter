@@ -18,10 +18,10 @@ class Round {
     this.turns++;  
     this.index++; 
     this.currentCard = this.deck.cards[this.index] 
-   if (!turn.evaluateGuess()) { 
-     this.incorrectGuesses.push(this.currentCard.id);
-   }
-   turn.giveFeedback();
+    if (!turn.evaluateGuess()) { 
+      this.incorrectGuesses.push(this.currentCard.id);
+    }
+    turn.giveFeedback();
   }
 
   calculatePercentCorrect() { 
@@ -31,7 +31,8 @@ class Round {
   }
 
   endRound() {
-    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()} of the questions correctly!`);
+    console.log(`** Round over! ** You answered 
+    ${this.calculatePercentCorrect()} of the questions correctly!`);
     // return process.exit();
   }   
 }
