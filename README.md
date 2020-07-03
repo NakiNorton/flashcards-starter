@@ -4,15 +4,14 @@
 Flash Cards is a command-line based application. The user can see the questions, take guesses, and see a final score at the end of the round. This project was built with Javascript, using Test Driven Development to drive the implementation of the code.
 
 ## Application in action:  
-Use the up/down arrow keys to select an answer, or use the number key for the answer you would like to select (1, 2 or 3):
 
 ![Gif of a full round](assets/flashcards-fullround.gif)
 
-At the end of the round you will get a message displaying the percentage of questions you got correct:
+The percentage of questions answered correctly will be displayed at the end of the round:
 
 ![Screenshot of the message at the end of the round](assets/Flashcards-percentage.png)
 
-Invalid inputs will produce an error message on the terminal:
+Invalid inputs will produce an error message:
 
 ![Screenshot of the invalid input message](assets/flashcards-invalid-input.png)
 
@@ -22,6 +21,16 @@ Invalid inputs will produce an error message on the terminal:
 * Run `npm install` to install the dependencies
 * Run `node index.js` to start a new game
 * To view the test suite, run `npm test`
+
+## To play
+1. The first question will display automatically
+2. Select an answer by either:
+  * Using the up/down arrow keys to select an answer, then hit enter
+  * Using the number key associated with answer you would like to select, then hit enter
+3. Hit enter to display the next question
+4. When a guess is submitted, a message will display to let you know if it was correct or incorrect
+5. The application will automatically be exited at the end of the round
+6. To exit the application earlier, hold `ctrl` and hit `c` 
 
 ## Developer:
 [Stephanie Norton](https://github.com/NakiNorton)
