@@ -13,25 +13,12 @@ class Turn {
   }
 
   evaluateGuess() { 
-    if (this.guess === this.card.correctAnswer) {
-      console.log('true')
-      return true;
-    } else {
-      console.log('false')
-      return false;
-    }
+    return (this.guess === this.card.correctAnswer) ? true : false;
   }
 
   giveFeedback() {
-    if (this.guess === this.card.correctAnswer) {
-      console.log('correct!')
-      return 'correct!';
-    } else {
-      console.log('incorrect!')
-      return 'incorrect!';
-    }
+    return this.evaluateGuess() ? 'correct!' : 'incorrect!';
   }
-
 }
 
 module.exports = Turn;
