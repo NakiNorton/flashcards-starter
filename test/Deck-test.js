@@ -24,6 +24,6 @@ describe('Deck', function() {
   });
 
   it('should know how many cards are in the deck', function() {
-    expect(deck.countCards()).to.equal(deck.cards.length);
+    expect(deck.countCards()).to.equal(3);
   });
 });
